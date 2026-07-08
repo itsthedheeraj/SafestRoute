@@ -1,0 +1,20 @@
+# Precomputed Graphs (Too large for Git)
+*.graphml
+
+# Older iterations of the application
+app2.py
+app3.py
+
+# Python environment & cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Streamlit configurations
+.streamlit/
