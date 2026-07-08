@@ -166,21 +166,20 @@ with st.sidebar:
     start_place = st.text_input("Start Location", value="L'Enfant Plaza, Washington DC")
     end_place = st.text_input("End Location", value="Capitol Hill, Washington DC")
     
-    st.markdown("---")
-    st.subheader("🛡️ Safety Options")
-    
     # Choose travel time (Daytime vs Nighttime)
     time_of_travel = st.selectbox(
         "Time of Travel", 
         ["Daytime (Use Day Safety Graph)", "Nighttime (Use Night Safety Graph)"]
     )
     
-    st.markdown("---")
-    st.subheader("Display Options")
-    show_fastest = st.checkbox("Show Fastest Route", value=True)
-    show_safest = st.checkbox("Show Safest Route", value=True)
+    # Checkboxes side-by-side to save height
+    col1, col2 = st.columns(2)
+    with col1:
+        show_fastest = st.checkbox("Show Fastest", value=True)
+    with col2:
+        show_safest = st.checkbox("Show Safest", value=True)
     
-    st.markdown("---")
+    st.markdown(" ") # Minimal spacing
     compute = st.button("🚀 Compute Routes", use_container_width=True)
 
 # Initialize routes data in session state if not already
