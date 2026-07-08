@@ -6,3 +6,4 @@ networkx
 geopy
 geopandas
 shapely
+scikit-learn
