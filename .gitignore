@@ -2,6 +2,11 @@
 app2.py
 app3.py
 
+# Specific large Bangalore graphs (exceeding 100MB limit)
+bangalore.graphml
+bd.graphml
+bn.graphml
+
 # Python environment & cache files
 __pycache__/
 *.pyc
